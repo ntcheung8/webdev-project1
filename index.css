@@ -17,14 +17,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 75vh;
+    margin-bottom: 20vh;
 }
 
 h1 {
     text-align: center;
-    font-family: monospace;
+    font-family: sans-serif;
     font-size: 5vw;
-    font-weight:800;
-    margin: 10px;
+    font-weight:300;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 p {
@@ -47,7 +48,7 @@ p {
 
 .typewriter {
     animation: animated-text 2.5s steps(28,end) 1s 1 normal both,
-               animated-cursor 800ms steps(23,end) infinite;
+               animated-cursor 1000ms steps(23,end) infinite;
   }
   
   @keyframes animated-text{
@@ -106,6 +107,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 2vh;
 }
 
 .gallery-img {
@@ -188,11 +190,28 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  
+
+  footer {
+    background-color: rgb(255, 255, 255);
+  }
+
+
+/* Code for footer */
+
+#created {
+  margin-bottom: 10px;
+  font-family: monospace;
+}
 .columns {
   display: flex;
   flex-direction: row;
-  height: 82vh;
+  padding-bottom: 10px;
+}
+
+.column > a > img {
+  padding: 0px;
+  height:5vh;
+  width: auto;
 }
 
 .column {
@@ -201,7 +220,6 @@ h2 {
   align-items: center;
   flex-grow: 1;
   align-self:flex-start;
-  padding-top: 10vh;
 }
 
 .column + .column {
