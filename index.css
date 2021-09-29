@@ -11,6 +11,67 @@ body {
     height: auto;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 4rem;
+    font-weight:800;
+    margin: 0px;
+}
+
+p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 2px;
+}
+
+.typewriter {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 0px;
+  }
+
+.typewriter {
+    animation: animated-text 2.5s steps(28,end) 1s 1 normal both,
+               animated-cursor 800ms steps(23,end) infinite;
+  }
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 59rem;}
+  }
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+  }
+
+h2 {
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.index-element {
+    height: 100vh
+}
+
 .navlinks {
     list-style-type: none;
     padding: 0;
@@ -20,7 +81,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: center;
 }
 
 .navlink > a{
@@ -32,6 +93,7 @@ body {
     font-weight:300;
     text-transform: uppercase;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .navlink > a:hover {
@@ -69,15 +131,6 @@ body {
 
 }
 
-.index-element {
-    width: 100vh;
-    height: auto;
-}
-
-.index-element > img {
-    width: 100%;
-    object-fit: cover;
-}
 
 .centered {
     margin-left: auto;
@@ -136,3 +189,21 @@ body {
     text-align: center;
   }
   
+.columns {
+  display: flex;
+  flex-direction: row;
+  height: 82vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  align-self:flex-start;
+  padding-top: 10vh;
+}
+
+.column + .column {
+  margin-left: 2%;
+}
