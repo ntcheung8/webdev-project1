@@ -1,200 +1,236 @@
+/* dark mode option */
+
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgba(0, 0, 0, 0.75);
+    --nav-dir: row;
+    --desc-dir: column;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --bg-color: rgb(51, 51, 51);
+        --text-color: rgba(255, 255, 255, 0.904);
+    }
+    .logo img {
+        filter: invert(80%);
+    }
+    .column>a>img {
+        filter: invert(80%);
+    }
+}
+
+body,
+h1,
+h2,
+.navlinks,
+footer,
+.logo img,
+.column>a>img,
+#created {
+    transition-property: background-color, color, border-color, filter;
+    transition-duration: .70s;
+    transition-timing-function: ease;
+}
+
+@media only screen and (max-width: 650px) {
+     :root {
+        --nav-dir: column;
+    }
+    .navlink {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+     :root {
+        --desc-dir: row;
+    }
+    img {
+        width: 100%;
+        max-width: 50vw;
+        max-height: 85vh;
+        object-fit: contain;
+    }
+}
+
 body {
-  margin: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color)
 }
 
 .logo {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
-.logo > a > img {
-  width: 60px;
-  height: auto;
+.logo>a>img {
+    width: 60px;
+    height: auto;
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  margin-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin-bottom: 20vh;
 }
 
 h1 {
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 5vw;
-  font-weight:300;
-  color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 5vw;
+    font-weight: 300;
+    color: var(--text-color);
 }
 
 p {
-text-align: center;
-font-family: sans-serif;
-font-size: 1em;
-margin: 2px;
-}
-
-.typewriter {
-  border-right: solid 3px rgba(0, 0, 0, 0.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-size: 6vw;
-  color: rgba(0, 0, 0, 0.7);
-  font-family: sans-serif;
-  font-weight: 500;
-  margin: 0px;
-}
-
-.typewriter {
-  animation: animated-text 2.5s steps(28,end) 1s 1 normal both,
-             animated-cursor 1000ms steps(23,end) infinite;
-}
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 59vw;}
-}
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0, 0, 0, 0.75);}
-  to{border-right-color: transparent;}
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 2px;
 }
 
 h2 {
-  margin: 20px;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  font-weight: 100;
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
 .index-element {
-  height: 100vh
+    height: 100vh
 }
 
 .navlinks {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: rgb(255, 255, 255);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: var(--nav-dir);
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.navlink > a{
-  color: black;
-  padding: 20px;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  font-weight:300;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.navlink>a {
+    color: var(--text-color);
+    padding: 20px;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.navlink > a:hover {
-  color: rgb(152, 180, 174);
+.navlink>a:hover {
+    color: rgb(152, 180, 174);
 }
 
 .centered {
-  margin-left: auto;
-  margin-right: auto;
-  font-family: sans-serif;
-  font-size: 1.2em;
-  max-width: 65%;
-  min-width: 20%;
-}
-
-img {
-    width: 100%;
-    max-width: 50vw;
-    max-height: 85vh;
-    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    max-width: 65%;
+    min-width: 20%;
 }
 
 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .describe-h1 {
+}
+
+.describe-h1 {
     font-size: 4rem;
     margin: 0 0 0.75rem 0;
     font-weight: 200;
     text-align: left;
-  }
-  .describe-h2 {
+}
+
+.describe-h2 {
     margin: 0 0 0.75rem 0;
     font-weight: 200;
     text-align: left;
-  }
-  
-  /* Pattern styles */
-  section {
-      height: 100%;
-  }
-  .container {
+}
+
+
+/* Pattern styles */
+
+section {
+    height: 100%;
+}
+
+.container {
     display: flex;
     width: 100%;
     height: 95vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: var(--nav-dir);
     justify-content: center;
     overflow: auto;
-  }
-  
-  .image {
+}
+
+.image {
     flex: 1.2;
     padding: 2rem;
     height: auto;
-  }
-  
-  .description {
+}
+
+.description {
+    color: var(--text-color);
     font-weight: 200;
     font-family: sans-serif;
     flex: 1;
     padding: 2rem;
-  }
+}
 
 h1 {
-  text-align: left;
+    color: var(--text-color);
+    text-align: left;
 }
+
 h2 {
-  text-align: left;
+    color: var(--text-color);
+    text-align: left;
 }
+
 
 /* Code for footer */
 
 #created {
-  margin-bottom: 10px;
-  font-family: monospace;
-}
-.columns {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 10px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-family: monospace;
 }
 
-.column > a > img {
-  padding: 0px;
-  height:5vh;
-  width: auto;
+.columns {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.column>a>img {
+    padding: 0px;
+    height: 5vh;
+    width: auto;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  align-self:flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    align-self: flex-start;
 }
 
-.column + .column {
-  margin-left: 2%;
+.column+.column {
+    margin-left: 2%;
 }

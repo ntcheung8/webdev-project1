@@ -1,3 +1,18 @@
+:root {
+    --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --text-color: rgba(255, 255, 255, 0.904);
+    }
+}
+
+h1 {
+    color: var(--text-color);
+    margin: 5vh;
+}
+
 .contact {
     margin-left: auto;
     margin-right: auto;
@@ -24,25 +39,26 @@
     margin-left: 10px;
 }
 
-
-input[type=text], select, textarea {
-    width: 100%; 
+input[type=text],
+select,
+textarea {
+    width: 100%;
     padding: 12px;
-    border: 1px solid #ccc; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
-  input[type=submit] {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
     background-color: #74d3b0;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #336957;
-  }
+}
