@@ -11,12 +11,13 @@ body {
     --nav-align: center;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-device-width: 700px),
+screen and (max-width: 700px) {
      :root {
         --nav-dir: column;
     }
     .navlink {
-        font-size: .8em;
+        font-size: 2em;
     }
 }
 
