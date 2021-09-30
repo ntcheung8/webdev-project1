@@ -118,6 +118,10 @@ h2 {
 
 .navlink>a {
     color: var(--text-color);
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     padding: 20px;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
