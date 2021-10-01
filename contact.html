@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>CS 347: Project 1</title>
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/contact.css">
-<link rel="icon" type="image/jpg" href="images/logo.png"/>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CS 347: Project 1</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/jpg" href="images/logo.png" />
 </head>
 
 <body>
 
-<div class="centered">
-    <nav>
-        <ul class="navlinks">
-            <li class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="arlly logo"></a>
-            </li>
-            <li class="navlink">
-                <a href="index.html">home</a>
-            </li>
-            <li class="navlink">
-                <a href="gallery.html">gallery</a>
-            </li>
-            <li class="navlink">
-                <a href="contact.html">contact</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+    <div class="centered">
+        <nav>
+            <ul class="navlinks">
+                <li class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="arlly logo"></a>
+                </li>
+                <li class="navlink">
+                    <a href="index.html">home</a>
+                </li>
+                <li class="navlink">
+                    <a href="gallery.html">gallery</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-<div class="contact">
-    <h1>Contact me!</h1>
+    <div class="contact">
+        <h1>Contact me!</h1>
         <div class="names">
             <div class="fname">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="ex. Kendrick, Snoop, Kanye">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="ex. Kendrick, Snoop, Kanye">
+            </div>
+            <div class="lname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="ex. Lamar, Dogg, West">
+            </div>
+        </div>
+        <label for="lname">Your Email</label>
+        <input type="text" id="lname" name="email" placeholder="example@gmail.com">
+
+        <label for="piece">Least Favorite Piece</label>
+        <select id="piece" name="piece">
+            <option>None</option>
+            <option>Friends</option>
+            <option>Pikachu on Desk</option>
+            <option>Hand and Flower</option>
+            <option>Self Portrait</option>
+            <option>Lone Sword</option>
+            <option>Casual Desk</option>
+            <option>Winter Tea</option>
+            <option>Koi</option>
+            <option>Bound by STEM</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Send me a message here..." style="height:20vh"></textarea>
+
+        <input type="submit" value="Submit">
     </div>
-    <div class="lname">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="ex. Lamar, Dogg, West">
-        </div>
-    </div>
-      <label for="lname">Your Email</label>
-      <input type="text" id="lname" name="email" placeholder="example@gmail.com">
 
-      <label for="piece">Least Favorite Piece</label>
-      <select id="piece" name="piece">
-        <option>None</option>
-        <option>Pikachu on Desk</option>
-        <option>Hand and Flower</option>
-        <option>Self Portrait</option>
-        <option>Lone Sword</option>
-        <option>Casual Desk</option>
-        <option>Winter Tea</option>
-        <option>Koi</option>
-        <option>Bound by STEM</option>
-      </select>
-  
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Send me a message here..." style="height:20vh"></textarea>
-  
-      <input type="submit" value="Submit">
-</div>
-
-
-<footer>
-    <div class="columns">
-        <div class="column">
-            <a href="https://www.artstation.com/ryojinrl"><img src="https://img.icons8.com/windows/480/000000/artstation.png"/></a>
+    <footer>
+        <div class="columns">
+            <div class="column">
+                <a href="https://www.artstation.com/ryojinrl"><img src="https://img.icons8.com/windows/480/000000/artstation.png" alt="artstation-logo" /></a>
+            </div>
+            <div class="column">
+                <a href="mailto: arllyamaranto@gmail.com"><img src="https://img.icons8.com/material-outlined/96/000000/mail.png" alt="mail-logo" /></a>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/arlly_a/"><img src="https://img.icons8.com/material-outlined/192/000000/instagram-new--v1.png" alt="instagram-logo" /></a>
+            </div>
+            <div class="column">
+                <a href="https://discord.gg/Ttjt7bbQYT"><img src="https://img.icons8.com/ios/250/000000/discord-logo--v1.png" alt="discord-logo" /></a>
+            </div>
         </div>
-        <div class="column">
-            <a href="mailto: arllyamaranto@gmail.com"><img src="https://img.icons8.com/material-outlined/96/000000/mail.png"/></a>
-        </div>
-        <div class="column">
-            <a href="https://www.instagram.com/arlly_a/"><img src="https://img.icons8.com/material-outlined/192/000000/instagram-new--v1.png"/></a>
-        </div>
-        <div class="column">
-            <a href="https://discord.gg/Ttjt7bbQYT"><img src="https://img.icons8.com/ios/250/000000/discord-logo--v1.png"/></a>
-        </div>
-      </div>
-      <p id="created">Created by Nicholas Cheung</p>
-</footer>
+        <p id="created">Created by Nicholas Cheung</p>
+    </footer>
 
 </body>
-
-
 
 </html>
