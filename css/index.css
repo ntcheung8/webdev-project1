@@ -80,39 +80,6 @@ p {
     margin: 2px;
 }
 
-.typewriter {
-    border-right: solid 3px var(--text-color);
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 6vw;
-    color: var(--text-color);
-    font-family: sans-serif;
-    font-weight: 500;
-    margin: 0px;
-}
-
-.typewriter {
-    animation: animated-text 2.5s steps(28, end) 1s 1 normal both, animated-cursor 1000ms steps(23, end) infinite;
-}
-
-@keyframes animated-text {
-    from {
-        width: 0;
-    }
-    to {
-        width: 59vw;
-    }
-}
-
-@keyframes animated-cursor {
-    from {
-        border-right-color: var(--text-color);
-    }
-    to {
-        border-right-color: transparent;
-    }
-}
-
 h2 {
     margin: 20px;
     text-align: center;

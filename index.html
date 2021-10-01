@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head lang="en">
+<head>
     <meta charset="UTF-8">
     <title>Arlly's Portfolio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/jpg" href="images/logo.png" />
+    <style>
+        .typewriter {
+            border-right: solid 3px var(--text-color);
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 6vw;
+            color: var(--text-color);
+            font-family: sans-serif;
+            font-weight: 500;
+            margin: 0px;
+        }
+        
+        .typewriter {
+            animation: animated-text 2.5s steps(28, end) 1s 1 normal both, animated-cursor 1000ms steps(23, end) infinite;
+        }
+        
+        @keyframes animated-text {
+            from {
+                width: 0;
+            }
+            to {
+                width: 59vw;
+            }
+        }
+        
+        @keyframes animated-cursor {
+            from {
+                border-right-color: var(--text-color);
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -43,7 +77,7 @@
                 <a href="https://www.artstation.com/ryojinrl"><img src="https://img.icons8.com/windows/480/000000/artstation.png" alt="artstation-logo" /></a>
             </div>
             <div class="column">
-                <a href="mailto: arllyamaranto@gmail.com"><img src="https://img.icons8.com/material-outlined/96/000000/mail.png" alt="mail-logo" /></a>
+                <a href="mailto:arllyamaranto@gmail.com"><img src="https://img.icons8.com/material-outlined/96/000000/mail.png" alt="mail-logo" /></a>
             </div>
             <div class="column">
                 <a href="https://www.instagram.com/arlly_a/"><img src="https://img.icons8.com/material-outlined/192/000000/instagram-new--v1.png" alt="instagram-logo" /></a>
