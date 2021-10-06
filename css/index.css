@@ -19,6 +19,10 @@ screen and (max-width: 650px) {
     .navlink {
         font-size: 2em;
     }
+    .overlay-container {
+        margin: 0px;
+    }
+    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,7 +93,7 @@ h2 {
 }
 
 .index-element {
-    height: 100vh
+    height: 100vh;
 }
 
 .navlinks {
@@ -120,20 +124,6 @@ h2 {
 
 .navlink>a:hover {
     color: rgb(152, 180, 174);
-}
-
-.gallery {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 2vh;
-}
-
-.gallery-img {
-    width: 100%;
-    object-fit: cover;
 }
 
 .larger-centered {
@@ -170,7 +160,6 @@ h2 {
     margin: 10px;
     position: relative;
     overflow: hidden;
-    /* [1.2] Hide the overflowing of child elements */
 }
 
 .overlay {
